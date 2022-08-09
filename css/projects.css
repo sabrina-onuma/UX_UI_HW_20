@@ -1,0 +1,96 @@
+.workGrid{
+    height: auto;
+    margin-top: 115px;
+    margin-bottom: 300px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "title title"
+    "image information"
+    "image information"
+    "button button";
+    row-gap: 10%;
+}
+
+.myWork{
+    
+    width: 75%;
+    float: right;
+}
+#projTitle{
+    grid-column: 1/3;
+}
+
+.workGrid>.projImg>img{
+    width: 200px;
+}
+.workGrid>.projImg{ 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.caseButton{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 25px;
+    background-color: #B15318;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border: 4px solid #B15318;
+    border-radius: 12px;
+}
+#viewButton{
+    font-family: 'Montserrat', sans-serif;
+    grid-column: 3;
+    padding: 12px 70px;
+    background-color: #B15318;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border: 4px solid #B15318;
+    border-radius: 12px;
+}
+#viewButton:hover {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    border: 4px solid #B15318;
+    color: #B15318;
+}
+.caseButton:hover{
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    border: 4px solid #B15318;
+    color: #B15318;
+}
+.workGrid>#buttonProj{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@media only screen and (max-width: 600) {
+
+    .myWork{
+        width:100%;
+    }
+    .workGrid{
+        display:grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        row-gap: 10px;
+        grid-template-areas:
+        "title"
+        "image" 
+        "information"
+        "image" 
+        "information"
+        "button";
+
+    }
+    #projTitle{
+        grid-column: 1;
+    }
+    
+}
+

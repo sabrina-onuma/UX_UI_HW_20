@@ -1,0 +1,25 @@
+.flexContainer{
+    display: inline-flex;
+    gap: 60px;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    
+}
+.mySkills{
+    width: 75%;
+    float: right;
+}
+.flexContainer > div{ 
+    flex: 1;
+}
+div.flexContainer{
+    flex: 1;
+    flex-wrap: wrap;
+}
+#cogIcon{
+    height: 128px;
+}
+
+
+
